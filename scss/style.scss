@@ -1,0 +1,149 @@
+$color-font: #4e4e4e;
+$color-label: #646464;
+$color-orange: #f27121;
+$color-red: #e94057;
+$color-purple: #8a2387;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: white;
+
+  background: linear-gradient(320deg, #f27121, #e94057, #8a2387);
+}
+
+.form-container {
+  max-width: 320px;
+  padding: 20px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  .form-element-container {
+    width: 100%;
+    margin-bottom: 32px;
+    // background: rgb(143, 178, 245);
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: white;
+      display: block;
+      cursor: pointer;
+      span {
+        opacity: 0.7;
+      }
+    }
+    input,
+    select {
+      width: 100%;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      background: #fff;
+      padding: 16px;
+      border: none;
+      outline: none;
+      color: $color-font;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      transition: 0.15s;
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &:focus {
+        border: 1px solid $color-purple;
+      }
+    }
+  }
+}
+
+input[type='checkbox'] {
+  width: 24px !important;
+  height: 24px;
+  display: inline-block !important;
+  margin-right: 16px;
+  & + label {
+    display: inline !important;
+    vertical-align: super;
+  }
+}
+
+select[multiple] {
+  option {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  background: $color-purple;
+  color: white;
+  position: relative;
+  transition: all 0.3s;
+  width: 100%;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll::-moz-scrollbar {
+  display: none;
+}
+.no-scroll::-o-scrollbar {
+  display: none;
+}
+.no-scroll::-google-ms-scrollbar {
+  display: none;
+}
+.no-scroll::-khtml-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}

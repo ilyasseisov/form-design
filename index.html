@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Новый пациент</h2>
+      <form>
+        <div class="form-element-container">
+          <label for="lastName">Фамилия</label>
+          <input placeholder="Иванов" id="lastName" type="text" required />
+        </div>
+        <div class="form-element-container">
+          <label for="firstName">Имя</label>
+          <input placeholder="Сергей" id="firstName" type="text" required />
+        </div>
+        <div class="form-element-container">
+          <label for="middleName">Отчество <span>(опционально)</span></label>
+          <input placeholder="Андреевич" id="middleName" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="dateofbirth">Дата рождения</label>
+          <input id="dateofbirth" type="date" />
+        </div>
+        <div class="form-element-container">
+          <label for="phone">Номер Телефона</label>
+          <input
+            value="7"
+            placeholder="7..."
+            id="phone"
+            type="number"
+            maxlength="11"
+          />
+        </div>
+        <div class="form-element-container">
+          <label for="gender">Пол <span>(опционально)</span></label>
+          <input placeholder="Мужской" id="gender" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="client-group">Группа клиентов</label>
+          <select class="no-scroll" id="client-group" multiple>
+            <option value="vip">VIP</option>
+            <option value="problematic">Проблемные</option>
+            <option value="oms">ОМС</option>
+          </select>
+        </div>
+        <div class="form-element-container">
+          <label for="doctor">Лечащий врач</label>
+          <select id="doctor">
+            <option value="ivanov">Иванов</option>
+            <option value="zaharov">Захаров</option>
+            <option value="chernysheva">Чернышева</option>
+          </select>
+        </div>
+        <div class="form-element-container">
+          <input type="checkbox" value="dontSend" id="sms" />
+          <label for="sms">Не отправлять СМС</label>
+        </div>
+        <h3>Адрес</h3>
+        <div class="form-element-container">
+          <label for="index">Индекс <span>(опционально)</span></label>
+          <input placeholder="420000" id="index" type="number" />
+        </div>
+        <div class="form-element-container">
+          <label for="country">Страна <span>(опционально)</span></label>
+          <input placeholder="Россия" id="country" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="region">Область <span>(опционально)</span></label>
+          <input placeholder="Ленинградская" id="region" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="city">Город</label>
+          <input placeholder="Казань" id="city" type="text" required />
+        </div>
+        <div class="form-element-container">
+          <label for="street">Улица <span>(опционально)</span></label>
+          <input placeholder="Тверская" id="street" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="house">Дом <span>(опционально)</span></label>
+          <input placeholder="102" id="house" type="number" />
+        </div>
+        <h3>Паспорт</h3>
+        <div class="form-element-container">
+          <label for="document">Тип документа</label>
+          <select id="document" required>
+            <option value="passport">Паспорт</option>
+            <option value="birthCertificate">Свидетельство о рождении</option>
+            <option value="driverLicense">Вод. удостоверение</option>
+          </select>
+        </div>
+        <div class="form-element-container">
+          <label for="passportSer">Серия <span>(опционально)</span></label>
+          <input placeholder="А" id="passportSer" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="passportNum">Номер <span>(опционально)</span></label>
+          <input placeholder="132456" id="passportNum" type="number" />
+        </div>
+        <div class="form-element-container">
+          <label for="issuer">Кем выдан <span>(опционально)</span></label>
+          <input placeholder="Служба..." id="issuer" type="text" />
+        </div>
+        <div class="form-element-container">
+          <label for="dateofissue">Дата выдачи</label>
+          <input id="dateofissue" type="date" required />
+        </div>
+        <div class="form-element-container">
+          <button type="submit">Создать</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
